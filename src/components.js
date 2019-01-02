@@ -80,10 +80,10 @@ export default (editor, opts = {}) => {
           let droppable = 1;
 
           // Avoid rendering codes with scripts
-          if (content.indexOf('<script') >= 0) {
-            this.el.innerHTML = opts.placeholderScript;
-            droppable = 0;
-          }
+          // if (content.indexOf('<script') >= 0) {
+          //   this.el.innerHTML = opts.placeholderScript;
+          //   droppable = 0;
+          // }
 
           model.set({ droppable });
         }, 0);
